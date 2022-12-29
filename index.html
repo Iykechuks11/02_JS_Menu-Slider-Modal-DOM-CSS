@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="img/img.jpeg" alt="user">
+    </div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <button id="toggle" class="toggle">
+      <i class="fa fa-bars fa-2x"></i>
+    </button>
+    <h1>Chukwu Ikechukwu John</h1>
+    <p>
+      <span class="span">Welcome to my Portfolio page</span>
+    </p>
+    <div class="social">
+      <a href="https://twitter.com/Champion_Chukwu" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/chukwu-john-ikechukwu-94b184156/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/Iykechuks11" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UC3eLbJVO50nXlAltTJXtx6Q" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+
+    <button class="cta-btn" id="open">Contact Me</button>
+  </header>
+
+  <div class="container">
+    <h2 class="span">Who am I?</h2>
+    <p>
+      I am a motivated and skilled individual. Aside from my degree, I took further steps and learned how to write
+      software programs efficiently.
+    </p>
+    <p>
+      I am research-oriented and passionate about supporting people and solving their technical problems.
+    </p>
+
+    <h2 class="span">My Education</h2>
+    <p>
+      I have an undergraduate degree in Industrial Mathematics from the Federal University of Technology in Owerri,
+      Nigeria.
+    </p>
+
+    <h2 class="span">Core strength</h2>
+    <p>I am proficient the the following:</p>
+    <div class="skill">
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-brands fa-js"></i>
+      <i class="fa-brands fa-bootstrap"></i>
+      <i class="fa-brands fa-angular"></i>
+    </div>
+    <!-- <ul>
+      <li>Data Structure and Algorithms</li>
+      <li>Abstract Algebra I, II & III</li>
+      <li>Computer Science and Applications</li>
+    </ul> -->
+
+    <h2 class="span p-head">Frontend Projects</h2>
+    <div class="projects">
+      <img src="img/img-1.JPG" alt="">
+      <img src="img/img-2.JPG" alt="">
+      <img src="img/img-3.JPG" alt="">
+      <!-- <img src="img/img-4.JPG" alt=""> -->
+    </div>
+
+    <h2 class="span p-head">Cybersecurity Research</h2>
+    <div class="projects-research">
+      <a href="https://www.academia.edu/49346036/SOME_APPLICATIONS_OF_NUMBER_THEORY_TO_RSA_PUBLIC_KEY_CRYPTOGRAPHY">
+        <img src="img/img-5.JPG" alt="">
+      </a>
+      
+      <!-- <img src="img/img-4.JPG" alt=""> -->
+    </div>
+
+    
+
+
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-container" id="modal">
+    <div class="modal">
+      <button class="close-btn" id="close">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <h3>Contact Me</h3>
+      </div>
+      <div class="modal-content">
+        <p>Fill out the form and shoot me a message!</p>
+        <form class="modal-form">
+          <div>
+            <label for="name">Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              placeholder="Enter Name"
+              class="form-input">
+          </div>
+          <div>
+            <label for="name">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              placeholder="Enter Email"
+              class="form-input">
+          </div>
+          <div>
+            <label for="Message">Message</label>
+          </div>
+          <div>
+            <textarea 
+              name="message" 
+              id="message" 
+              cols="30" rows="10" 
+              placeholder="Enter your message ..."
+              class="form-input">
+            </textarea>
+          </div>
+        
+          <input type="button" value="Submit" class="submit-btn">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
